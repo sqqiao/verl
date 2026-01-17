@@ -128,7 +128,7 @@ actor_rollout_ref:
 custom_reward_function:
 
   # The path to the file containing your customized reward function.
-  # If not specified, pre-implemented reward functions will be used.
+  # If not specified, pre-implemented reward functions will be used.  # 使用pre-defined好的rm上手
   path: null
 
   # The name of the reward function within the specified file. Default is 'compute_score'.
@@ -308,7 +308,7 @@ trainer:
   del_local_ckpt_after_load: False
 
   # Default local directory for saving checkpoints
-  default_local_dir: checkpoints/${trainer.project_name}/${trainer.experiment_name}
+  default_local_dir: /data/qiaoshiqi/trained_models/${trainer.project_name}/${trainer.experiment_name}
 
   # Maximum number of actor checkpoints to keep
   max_actor_ckpt_to_keep: null

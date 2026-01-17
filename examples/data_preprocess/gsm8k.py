@@ -39,7 +39,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    data_source = "openai/gsm8k"
+    data_source = "/data/qiaoshiqi/data/openai/gsm8k"
 
     dataset = datasets.load_dataset(data_source, "main")
 

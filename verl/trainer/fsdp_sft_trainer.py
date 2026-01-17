@@ -509,7 +509,7 @@ class FSDPSFTTrainer:
         """Save checkpoint using FSDPCheckpointManager with improved tracking"""
         from verl.utils.fs import local_mkdir_safe
 
-        # Determine checkpoint path
+        # Determine checkpoint path # 路径
         local_global_step_folder = os.path.join(self.config.trainer.default_local_dir, f"global_step_{step}")
 
         if self.device_mesh.get_rank() == 0:
